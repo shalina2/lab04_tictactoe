@@ -48,11 +48,11 @@ namespace Lab04_TicTacToe.Classes
 
         Use any and all pre-existing methods in this program to help construct the method logic. 
          */
-
+         // shalom comment
         // create two players ,the first player goes first so we do boolean so that player two remains false while player one is active
         Playerone.IsTurn=true;
         Playerone.Marker="X";
-
+            //// shalom comment
             // and now while player 2 is playing player one shold remain false
             PlayerTwo.Marker="O";
             PlayerTwo.IsTurn=false;
