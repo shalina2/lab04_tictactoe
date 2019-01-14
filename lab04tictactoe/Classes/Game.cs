@@ -51,10 +51,10 @@ namespace Lab04_TicTacToe.Classes
          // shalom comment
         // create two players ,the first player goes first so we do boolean so that player two remains false while player one is active
         Playerone.IsTurn=true;
-        Playerone.Marker="X";
+        Playerone.Sign="X";
             //// shalom comment
             // and now while player 2 is playing player one shold remain false
-            PlayerTwo.Marker="O";
+            PlayerTwo.Sign="O";
             PlayerTwo.IsTurn=false;
 
 
