@@ -32,22 +32,32 @@ namespace Lab04_TicTacToe.Classes
 		{
 
         //
-        TODO: Complete this method and utilize the rest of the class structure to play the game.
+       // TODO: Complete this method and utilize the rest of the class structure to play the game.
 
-            /*
-             * Complete this method by constructing the logic for the actual playing of Tic Tac Toe. 
-             * 
-             * A few things to get you started:
-            1. A turn consists of a player picking a position on the board with their designated marker. 
-            2. Display the board after every turn to show the most up to date state of the game
-            3. Once a Winner is determined, display the board one final time and return a winner
+        /*
+         * Complete this method by constructing the logic for the actual playing of Tic Tac Toe. 
+         * 
+         * A few things to get you started:
+        1. A turn consists of a player picking a position on the board with their designated marker. 
+        2. Display the board after every turn to show the most up to date state of the game
+        3. Once a Winner is determined, display the board one final time and return a winner
 
-            Few additional hints:
-                Be sure to keep track of the number of turns that have been taken to determine if a draw is required
-                and make sure that the game continues while there are unmarked spots on the board. 
+        Few additional hints:
+            Be sure to keep track of the number of turns that have been taken to determine if a draw is required
+            and make sure that the game continues while there are unmarked spots on the board. 
 
-            Use any and all pre-existing methods in this program to help construct the method logic. 
-             */
+        Use any and all pre-existing methods in this program to help construct the method logic. 
+         */
+
+        // create two players ,the first player goes first so we do boolean so that player two remains false while player one is active
+        Playerone.IsTurn=true;
+        Playerone.Marker="X";
+
+            // and now while player 2 is playing player one shold remain false
+            PlayerTwo.Marker="O";
+            PlayerTwo.IsTurn=false;
+
+
 		}
 
 
@@ -86,6 +96,7 @@ namespace Lab04_TicTacToe.Classes
 				// TODO:  Determine a winner has been reached. 
 				// return true if a winner has been reached. 
 			
+             if(a=="X" && b =="X" && c=="XX || a =="o" && b== "o" && c=="o") return true;
 			}
 
 			return false;
@@ -124,3 +135,4 @@ namespace Lab04_TicTacToe.Classes
 
 	}
 }
+
