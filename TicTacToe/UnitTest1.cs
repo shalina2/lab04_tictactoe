@@ -51,10 +51,10 @@ namespace TicTacToe
             p1.IsTurn = true;
             int position = 2;
             Position position2 = Player.PositionForNumber(position);
-            Position newpo = new Position(0, 1);
+            Position newpostion = new Position(0, 1);
 
-            Assert.Equal(newpo.Column, position2.Column);
-            Assert.Equal(newpo.Row, position2.Row);
+            Assert.Equal(newpostion.Column, position2.Column);
+            Assert.Equal(newpostion.Row, position2.Row);
         }
 
 
